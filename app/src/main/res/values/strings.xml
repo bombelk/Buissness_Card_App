@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Buissness Card App</string>
+    <string name="my_name">Kacper Blabla</string>
+    <string name="android_developer_extraordinaire">Android Developer Extraordinaire</string>
+    <string name="phone_number">123–456-789</string>
+    <string name="kacper_blabla_gmail_com">kacper.blabla@gmail.com</string>
+    <string name="share">\@bombelk</string>
 </resources>
