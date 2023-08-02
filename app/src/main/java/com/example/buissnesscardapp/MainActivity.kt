@@ -25,7 +25,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -61,7 +64,27 @@ fun BusinessCard() {
                 .background(Color(0xFF073042))
         )
         Text(
-            text = stringResource(R.string.my_name),
+            //text = stringResource(R.string.my_name),
+            text = buildAnnotatedString {
+                                        withStyle(
+                                            style = SpanStyle(
+                                                color = Color(0xFF006c39),
+                                                fontSize = 30.sp
+                                            )
+                                        ){
+                                            append("K")
+                                        }
+                append("acper ")
+                withStyle(
+                    style = SpanStyle(
+                        color = Color(0xFF006c39),
+                        fontSize = 30.sp
+                    )
+                ){
+                    append("B")
+                }
+                append("labla")
+            },
             fontSize = 28.sp,
             modifier = Modifier
                 .padding(top = 5.dp)
